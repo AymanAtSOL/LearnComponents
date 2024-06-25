@@ -1,5 +1,7 @@
 <span>
   <ng-content></ng-content>
 </span>
-
-<ng-content select=".icon"></ng-content>
+<!-- use ngProjectAs(where u use appButton) if u want to put the span element inside this template. Still there will be nested spans but one of them has the class .icon-->
+<ng-content select=".icon">
+  →
+</ng-content>
